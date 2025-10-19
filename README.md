@@ -1,50 +1,110 @@
-# Welcome to your Expo app 👋
+# Fokus - Timer Pomodoro
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Fokus é um aplicativo mobile inteligente para gestão do tempo que implementa a técnica de produtividade baseada em intervalos cronometrados. A ferramenta ajuda usuários a maximizar seu foco e prevenir a fadiga mental através de ciclos balanceados de trabalho e descanso.
 
-## Get started
+## 🎯 Funcionalidades
 
-1. Install dependencies
+- ⏱️ **Timer Pomodoro**: 25 minutos de foco, 5 minutos de pausa curta e 15 minutos de pausa longa
+- 🎨 **Interface intuitiva**: Design moderno e fácil de usar
+- ⏯️ **Controle de timer**: Play, pause e reset
+- 📱 **Multiplataforma**: Funciona em iOS e Android
+- 🔄 **Troca de modos**: Alternância fácil entre foco e pausas
 
-   ```bash
-   npm install
-   ```
+## 🚀 Tecnologias Utilizadas
 
-2. Start the app
+- **React Native** - Framework para desenvolvimento mobile
+- **Expo** - Plataforma para desenvolvimento React Native
+- **JavaScript** - Linguagem de programação
+- **React Hooks** - useState, useRef, useEffect
+- **StyleSheet** - Estilização dos componentes
 
-   ```bash
-   npx expo start
-   ```
+## 📋 Pré-requisitos
 
-In the output, you'll find options to open the app in a
+Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- Você instalou a versão mais recente do **Node.js** (versão 14 ou superior)
+- Você instalou o **Expo CLI** globalmente
+- Você tem uma máquina **Windows / Linux / Mac**
+- Você tem o **Git** instalado
+- Para testar no dispositivo físico: **Expo Go** instalado no smartphone
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 🛠️ Instalando o Fokus
 
-## Get a fresh project
+Para instalar o Fokus em sua máquina, siga estas etapas:
 
-When you're ready, run:
-
+### Clone o repositório
 ```bash
-npm run reset-project
+git clone https://github.com/beatrizdaddea/fokus_app.git
+cd fokus-pomodoro
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### Instale as dependências
+```bash
+npm install
+```
 
-## Learn more
+### Execute o projeto
+```bash
+npx expo start
+# ou
+npm start
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+## 📱 Usando o Fokus
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+Para usar o Fokus, siga estas etapas:
 
-## Join the community
+1. **Escolha o modo**: Selecione entre "Foco", "Pausa curta" ou "Pausa longa"
+2. **Inicie o timer**: Clique no botão "Começar" para iniciar a contagem regressiva
+3. **Controle o timer**: Use o botão "Pausar" para interromper temporariamente
+4. **Troque de modo**: Mude entre os modos a qualquer momento
 
-Join our community of developers creating universal apps.
+### Exemplo de uso:
+```
+1. Selecione "Foco" (25 minutos)
+2. Clique em "Começar" 
+3. Trabalhe focado até o timer zerar
+4. Faça uma pausa curta (5 minutos)
+5. Repita o ciclo
+```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## 🏗️ Estrutura do Projeto
+
+```
+fokus/
+├── assets/
+│   ├── images/
+│   │   ├── focus.png
+│   │   ├── short_break.png
+│   │   └── long_break.png
+├── components/
+│   ├── buttons/
+│   │   ├── ActionButton/
+│   │   └── FokusButton/
+│   └── timers/
+│       └── Timer/
+├── App.js
+└── package.json
+```
+
+
+## 🤝 Contribuindo para o Fokus
+
+Para contribuir com o Fokus, siga estas etapas:
+
+1. Bifurque este repositório.
+2. Crie um branch: `git checkout -b <nome_branch>`.
+3. Faça suas alterações e confirme-as: `git commit -m '<mensagem_commit>'`
+4. Envie para o branch original: `git push origin <nome_do_projeto>/<local>`
+5. Crie a solicitação de pull.
+
+Como alternativa, consulte a documentação do GitHub em [como criar uma solicitação pull](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
+
+
+## 📝 Licença
+
+Esse projeto está sob licença MIT. Veja o arquivo [LICENÇA](LICENSE) para mais detalhes.
+
+---
+
+**Nota**: Projeto desenvolvido para fins educacionais como parte do curso de React Native da Alura.
