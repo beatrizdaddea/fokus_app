@@ -2,6 +2,9 @@
 
 Fokus é um aplicativo mobile inteligente para gestão do tempo que implementa a técnica de produtividade baseada em intervalos cronometrados. A ferramenta ajuda usuários a maximizar seu foco e prevenir a fadiga mental através de ciclos balanceados de trabalho e descanso.
 
+<img width="792" height="1465" alt="Screenshot_20251019_154945" src="https://github.com/user-attachments/assets/57fa9129-2aa1-43c2-9c5c-32acc0e42033" />
+
+
 ## 🎯 Funcionalidades
 
 - ⏱️ **Timer Pomodoro**: 25 minutos de foco, 5 minutos de pausa curta e 15 minutos de pausa longa
@@ -35,7 +38,7 @@ Para instalar o Fokus em sua máquina, siga estas etapas:
 ### Clone o repositório
 ```bash
 git clone https://github.com/beatrizdaddea/fokus_app.git
-cd fokus-pomodoro
+cd fokus_app
 ```
 
 ### Instale as dependências
